@@ -1,0 +1,76 @@
+" Vim configuration file.
+" Wei Liu <liuw at liuw dot name>
+" Keep everything as simple as possible.
+
+set nocompatible
+set nobackup
+
+" searching options
+set hlsearch incsearch
+set ignorecase smartcase
+
+" general user interface
+set number
+set ruler
+set showcmd
+set wildmenu wildmode=list:longest
+set showmatch
+set linebreak
+syntax on
+
+" inspect first and last 10 lines for Vim modeline
+" help modeline for more information
+set modelines=10
+
+" enable Vim to edit multiple files
+set hidden
+
+" bigger command history
+set history=1000
+
+" text editing, can be override by modeline
+set textwidth=0
+set nowrap
+set autoread autowrite
+set clipboard+=unnamed " yanks go to clipboard
+
+" customized mappings
+imap jk <Esc>
+map <UP> gk
+map <DOWN> gj
+
+" auto change directory to current buffer
+set autochdir
+autocmd BufEnter * silent! lcd %:p:h " make sure plugins work
+
+" commands and auto commands
+"
+command! W exec 'w !sudo tee % > /dev/null' | e!
+autocmd BufRead,BufNewFile {*.md,*.mkd,*.markdown} set ft=markdown
+autocmd BufRead,BufNewFile {COMMIT_EDITMSG} set ft=gitcommit
+
+"
+" vundle section start, disable filetype first (required)
+" use vundle to manage plugins :-)
+filetype off
+set runtimepath+=~/git/liuwsdotvimrc/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle, required
+Bundle 'gmarik/vundle'
+
+Bundle 'gtags.vim'
+Bundle 'msanders/snipmate.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'mileszs/ack.vim'
+
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+
+" vundle section end
+"
+
+" enable filetype plugin and indent files loading
+filetype plugin on
+filetype indent on
