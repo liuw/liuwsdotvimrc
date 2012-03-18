@@ -47,7 +47,7 @@ autocmd BufEnter * silent! lcd %:p:h " make sure plugins work
 "
 command! W exec 'w !sudo tee % > /dev/null' | e!
 autocmd BufRead,BufNewFile {*.md,*.mkd,*.markdown} set ft=markdown
-autocmd BufRead,BufNewFile {COMMIT_EDITMSG} set ft=gitcommit
+autocmd BufRead,BufNewFile {COMMIT_EDITMSG} set ft=gitcommit tw=78 wrap
 
 "
 " vundle section start, disable filetype first (required)
