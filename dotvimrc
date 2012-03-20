@@ -18,6 +18,13 @@ set showmatch
 set linebreak
 syntax on
 
+" highlight on overlength
+if exists('+colorcolumn')
+	set colorcolumn=79
+	highlight link OverLength colorcolumn
+	exec 'match OverLength /\%'.&cc.'v.\+/'
+endif
+
 " inspect first and last 10 lines for Vim modeline
 " help modeline for more information
 set modelines=10
