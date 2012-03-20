@@ -62,6 +62,7 @@ Bundle 'gmarik/vundle'
 Bundle 'gtags.vim'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mileszs/ack.vim'
 
