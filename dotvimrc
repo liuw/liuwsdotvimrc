@@ -76,6 +76,9 @@ Bundle 'mileszs/ack.vim'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 
+Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-rails'
+
 " vundle section end
 "
 
