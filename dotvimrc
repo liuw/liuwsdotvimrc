@@ -1,6 +1,12 @@
 " Vim configuration file.
 " Wei Liu <liuw at liuw dot name>
 " Keep everything as simple as possible.
+"
+" How to use on a fresh installed machine:
+" 1. git submodule init
+" 2. git submodule update
+" 3. ln -s /path/to/dotvimrc ~/.vimrc
+" 4. vim +BundleInstall +qall
 
 set nocompatible
 set nobackup
