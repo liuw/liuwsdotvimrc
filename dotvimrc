@@ -77,6 +77,7 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'Lokaltog/vim-powerline'
 Bundle 'mileszs/ack.vim'
 
 Bundle 'L9'
