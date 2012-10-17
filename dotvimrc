@@ -22,6 +22,7 @@ set showcmd
 set wildmenu wildmode=list:longest
 set showmatch
 set linebreak
+set laststatus=2
 syntax on
 
 " highlight on overlength
@@ -51,6 +52,8 @@ set clipboard+=unnamed " yanks go to clipboard
 imap jk <Esc>
 map <UP> gk
 map <DOWN> gj
+nmap <tab> :bn<CR>
+nmap <s-tab> :bp<CR>
 nnoremap ; :
 let mapleader = ','
 map <C-J> <C-W>j<C-W>_
