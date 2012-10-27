@@ -49,7 +49,7 @@ set autoread autowrite
 set clipboard+=unnamed " yanks go to clipboard
 
 " customized mappings
-imap jk <Esc>
+imap jk <Esc>:w<CR>
 map <UP> gk
 map <DOWN> gj
 nmap <tab> :bn<CR>
