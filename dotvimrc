@@ -24,6 +24,7 @@ set showmatch
 set linebreak
 set laststatus=2
 syntax on
+colorscheme desert
 
 " highlight on overlength
 if exists('+colorcolumn')
