@@ -53,8 +53,8 @@ set clipboard+=unnamed " yanks go to clipboard
 imap jk <Esc>:w<CR>
 map <UP> gk
 map <DOWN> gj
-nmap <tab> :bn<CR>
-nmap <s-tab> :bp<CR>
+nmap <silent> <tab> :bn<CR>
+nmap <silent> <s-tab> :bp<CR>
 nnoremap ; :
 let mapleader = ','
 map <C-J> <C-W>j<C-W>_
