@@ -65,7 +65,7 @@ map <C-L> <C-W>l<C-W>_
 nmap <silent> <leader>/ :nohlsearch<CR>
 
 " auto change directory to current buffer
-set autochdir
+" set autochdir
 autocmd BufEnter * silent! lcd %:p:h " make sure plugins work
 
 " commands and auto commands
@@ -89,7 +89,7 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'Lokaltog/vim-powerline'
+" Bundle 'Lokaltog/vim-powerline'
 Bundle 'mileszs/ack.vim'
 
 Bundle 'L9'
