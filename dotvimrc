@@ -64,6 +64,11 @@ map <C-L> <C-W>l<C-W>_
 " clear highlighted search
 nmap <silent> <leader>/ :nohlsearch<CR>
 
+" show invisibles
+nmap <leader>l :set list!<CR>
+set listchars=tab:▸\ ,eol:¬
+set list
+
 " auto change directory to current buffer
 " set autochdir
 " autocmd BufEnter * silent! lcd %:p:h " make sure plugins work
