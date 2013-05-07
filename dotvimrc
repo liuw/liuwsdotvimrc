@@ -63,6 +63,8 @@ map <C-H> <C-W>h<C-W>_
 map <C-L> <C-W>l<C-W>_
 " clear highlighted search
 nmap <silent> <leader>/ :nohlsearch<CR>
+" shortcut to edit file in the same directory
+nnoremap <Leader>e :e <C-R>=expand('%:p:h') . '/'<CR>
 
 " show invisibles
 nmap <leader>l :set list!<CR>
