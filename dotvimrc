@@ -80,6 +80,7 @@ set list
 command! W exec 'w !sudo tee % > /dev/null' | e!
 autocmd BufRead,BufNewFile {*.md,*.mkd,*.markdown} set ft=markdown spell
 autocmd BufRead,BufNewFile {COMMIT_EDITMSG} set ft=gitcommit tw=72 wrap spell
+autocmd BufRead,BufNewFile {*.py} set et sts=4 sw=4 ts=4
 
 " Jump back to last position when reopening a file
 if has("autocmd")
