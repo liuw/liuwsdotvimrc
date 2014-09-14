@@ -78,8 +78,8 @@ set list
 " commands and auto commands
 "
 command! W exec 'w !sudo tee % > /dev/null' | e!
-autocmd BufRead,BufNewFile {*.md,*.mkd,*.markdown} set ft=markdown
-autocmd BufRead,BufNewFile {COMMIT_EDITMSG} set ft=gitcommit tw=78 wrap
+autocmd BufRead,BufNewFile {*.md,*.mkd,*.markdown} set ft=markdown spell
+autocmd BufRead,BufNewFile {COMMIT_EDITMSG} set ft=gitcommit tw=72 wrap spell
 
 " Jump back to last position when reopening a file
 if has("autocmd")
